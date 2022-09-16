@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <title>머신러닝 서비스</title>
@@ -109,7 +109,7 @@
             var dic_class2information = {};
             dic_class2information['나연'] = 'TWICE의 멤버';
             dic_class2information['장원영'] = 'IVE의 멤버.';
-            dic_class2information['안유진'] = 'IVE의 리더';
+            dic_class2information['안유진'] = 'IVE의 멤버';
             var image = document.getElementById("face-image");
             const prediction = await model.predict(image, false);
             prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
